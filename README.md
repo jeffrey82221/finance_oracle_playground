@@ -16,6 +16,7 @@ conda install python=3.8.8
 conda install numpy scipy scikit-learn
 conda install lightgbm
 conda install grpcio
+conda install Jinja2
 pip install pystan==2.19.1.1
 pip install prophet
 pip install xgboost
