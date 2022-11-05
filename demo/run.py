@@ -17,12 +17,3 @@ get_report(portfolio)
 empyrial(portfolio)
 empyrial.orderbook.to_csv('orderbook.csv')
 
-from the_oracle import oracle
-  
-oracle(
-      portfolio=PORTFOLIO, #stocks you want to predict
-      start_date = "2018-01-01", #date from which it will take data to predict
-      weights = portfolio.weights, #allocate 30% to TSLA and 20% to AAPL...(equal weighting  by default)
-      prediction_days=30 #number of days you want to predict
-)
-

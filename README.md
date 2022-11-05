@@ -4,7 +4,7 @@ Study the usage of SUA / the-oracle / beibo / empyrial
 # Install 
 
 
-## Setup lightGBM & XGBoost
+## Setup environment for empyrial
 
 ```
 brew install cmake libomp
@@ -17,9 +17,21 @@ conda install numpy scipy scikit-learn
 conda install lightgbm
 conda install grpcio
 conda install Jinja2
-pip install pystan==2.19.1.1
-pip install prophet
+pip install empyrial
 pip install xgboost
+```
+## Setup environment for the-oracle
+
+```
+conda create -n oracle
+conda activate oracle
+conda install python=3.8.8
+conda install pytorch==1.8.0
+conda install lightgbm
+pip install pystan==2.19.1.1
+pip install prophet==1.0
+pip install darts==0.20.0
+pip install the-oracle==0.1.1
 ```
 
 ## Install the-oracle & empyrial & sua
@@ -34,3 +46,13 @@ pip install sua
 conda activate boost
 ```
 # Tutorial 
+
+```
+python demo/run.py
+```
+
+
+# TODO: 
+- [ ] Fix the-oracle not working problem 
+- [ ] Understand the mechanism of empyrial and the-oracle
+- [ ] Combine the `return rate` of the-orical with empyrial's profolio optimization
